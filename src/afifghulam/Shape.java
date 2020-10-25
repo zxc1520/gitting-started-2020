@@ -5,7 +5,8 @@ class Shapes {
 
     Scanner scan = new Scanner(System.in);
     int num, row, col, selection;
-
+	
+	//Menus
     System.out.println("==============================");
     System.out.println("\tCreate your own shape");
     System.out.println("==============================");
