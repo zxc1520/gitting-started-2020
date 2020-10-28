@@ -13,6 +13,7 @@ class Shapes {
     System.out.println("1. Square");
     System.out.println("2. Triangle");
     System.out.println("3. Number Triangle");
+    System.out.println("4. Info");
     System.out.print("Your option: ");
     selection = scan.nextInt();
     System.out.println("------------------------------");
@@ -63,8 +64,13 @@ class Shapes {
             System.out.println();
 
           }
-
           break;
+
+          case 4:
+            System.out.println("=====INFORMATION=====");
+            System.out.println("1. Created by Me");
+            System.out.println("2. On 28th October");
+            break;
 
       default: 
         System.out.println("Input option mismatch !");
