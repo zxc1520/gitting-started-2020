@@ -4,7 +4,7 @@ class Shapes {
   public static void main(String[] args) {
 
     Scanner scan = new Scanner(System.in);
-    int num, row, col, selection;
+    int num, num2, row, col, selection;
 	
 	//Menus
     System.out.println("==============================");
@@ -12,6 +12,7 @@ class Shapes {
     System.out.println("==============================");
     System.out.println("1. Square");
     System.out.println("2. Triangle");
+    System.out.println("3. Number Triangle");
     System.out.print("Your option: ");
     selection = scan.nextInt();
     System.out.println("------------------------------");
@@ -45,6 +46,25 @@ class Shapes {
           System.out.print("\n");
         }
         break;
+
+        case 3:
+          System.out.print("Input your number: ");
+          num2 = scan.nextInt();
+
+          for(int i=0; i<= num2; i++) {
+            for(int j=num2; j >=1; j--) {
+              if(j>i) {
+                System.out.print(" ");
+              } else {
+                System.out.print(i - j + 1);
+              }
+            }
+
+            System.out.println();
+
+          }
+
+          break;
 
       default: 
         System.out.println("Input option mismatch !");
